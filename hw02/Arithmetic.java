@@ -27,17 +27,17 @@ public class Arithmetic{
         //Compute total sock cost 
         double totalSockCost=nSocks*sockCost$;
         //Compute total sock cost with tax
-        double totalSockCostWithTax=(totalSockCost*taxPercent)+totalSockCost;
+        double totalSockCostWithTax= (int) (((totalSockCost*taxPercent)+totalSockCost)*100)/100.0;
         
         //Compute total drinking glasses cost
         double totalDrinkingGlassesCost=nGlasses*glassCost$;
         //Compute total drinking glasses cost with tax
-        double totalDrinkingGlassesCostWithTax=(totalDrinkingGlassesCost*taxPercent)+totalDrinkingGlassesCost;
+        double totalDrinkingGlassesCostWithTax= (int) (((totalDrinkingGlassesCost*taxPercent)+totalDrinkingGlassesCost)*100)/100.0;
         
         //Compute total boxes of envelopes cost
         double totalBoxesOfEnvelopesCost=nEnvelopes*envelopeCost$;
         //Compute total boxes of envelopes cost with tax
-        double totalBoxesOfEnvelopesCostWithTax=(totalBoxesOfEnvelopesCost*taxPercent)+totalBoxesOfEnvelopesCost;
+        double totalBoxesOfEnvelopesCostWithTax= (int) (((totalBoxesOfEnvelopesCost*taxPercent)+totalBoxesOfEnvelopesCost)*100)/100.0;
         
         //Compute total cost of purchases before tax
         double totalCostOfPurchasesBeforeTax=(totalSockCost)+(totalDrinkingGlassesCost)+(totalBoxesOfEnvelopesCost);
