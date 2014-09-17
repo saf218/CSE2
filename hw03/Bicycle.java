@@ -25,20 +25,20 @@ public class Bicycle{
         
         //input
         System.out.print("Enter the number of seconds:");
-        int nSeconds = myScanner.nextInt();
+        double nSeconds = myScanner.nextDouble();
         System.out.print("Enter the number of counts:");
         int nCounts = myScanner.nextInt();
         
-        System.out.print("nSeconds"+nSeconds+".");
         
-        //double distanceInMiles=(wheelDiameter*PI*nCounts)/inchesPerFoot/feetPerMile; 
         
-        //System.out.print("The distance was "+(distanceInMiles)+ " miles and took "+(nSeconds/secondsPerMinute)+" minutes.");
+        double distanceInMiles=(wheelDiameter*PI*nCounts)/inchesPerFoot/feetPerMile; 
         
-        //double time= (nSeconds/secondsPerMinute)/minutesPerHour;
-        //double averageMilesPerHour= distanceInMiles/time;
-        //System.out.print("time " +(time)+".");
-        //System.out.print("The average mph was "+averageMilesPerHour+".");
+        System.out.println("The distance was "+(distanceInMiles)+ " miles and took "+(nSeconds/secondsPerMinute)+" minutes.");
+        
+        double time= (nSeconds/secondsPerMinute)/minutesPerHour;
+        double averageMilesPerHour= distanceInMiles/time;
+        
+        System.out.println("The average mph was "+averageMilesPerHour+".");
             
          
     
